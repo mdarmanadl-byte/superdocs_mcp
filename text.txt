@@ -1,0 +1,31 @@
+.venv\Scripts\Activate.ps1
+
+# Create the environment with Python 3.12
+py -3.12 -m venv .venv
+
+# Activate it
+.venv\Scripts\Activate.ps1
+
+# Upgrade package management
+python -m pip install --upgrade pip
+
+# Install your project libraries
+pip install -r requirements.txt
+
+
+uvicorn app.main:app --reload
+
+Test-Path "uploads/edb71393-61ef-46c1-806e-57bec81411be/07621913-6102-4944-ae94-7c746ca684c9_document.pdf"
+
+ec3a4040-5667-4656-b70e-73b6efc88a19
+
+  "pile_id": "c67a15e1-7c7f-4e22-934f-360aea68aafb",
+
+
+  b8f1ecf4-ac04-4608-9659-f2e60ba8a317
+
+
+  pil: 37e457ab-0ad0-426e-8b1e-09f1b6385cac
+
+
+  ecbefdc2-7dc9-4203-ac72-36e91430ff12
