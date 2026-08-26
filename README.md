@@ -313,9 +313,9 @@ Human review is implemented as an actual graph interrupt rather than only a fron
 
 
 
-```text
-![API Tests](./docs/screenshots/bakend_api.png)
-```
+
+![API Tests](./docs/screenshots/backend_api.png)
+
 ### Architecture
 
 ![SuperDocs Architecture](./docs/screenshots/sepurdocs.drawio.png)
