@@ -9,6 +9,9 @@ client = Groq(
     api_key=os.environ["GROQ_API_KEY"]
 ) 
 
+
+
+
 def build_answer_messages(query: str, context: str):
     system_prompt = """
 You answer questions using retrieved document context.
@@ -85,14 +88,14 @@ def generate_answer(
     )
 
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-20b",
         messages=messages,
         temperature=0,
     )
     usage = get_llm_usage(response)
 
-    print("LLM USAGE:", usage)
-    print("LLM USAGE:", response.usage)
+    # print("LLM USAGE:", usage)
+    # print("LLM USAGE:", response.usage)
     return response.choices[0].message.content,usage
 def parse_finding_response(response: str) -> dict:
     try:

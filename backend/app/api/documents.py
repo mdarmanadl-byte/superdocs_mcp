@@ -191,8 +191,8 @@ async def ask_documents(
         }
     },
         )
-    print("GRAPH RESULT:")
-    print(result)
+    # print("GRAPH RESULT:")
+    # print(result)
     usage = result.get("usage", {})
 
     total_usage = calculate_total_usage(usage)
@@ -210,7 +210,7 @@ async def ask_documents(
         }
             
     finding_data = result.get("finding", {})
-    print("FINDING DATA:", finding_data)
+    # print("FINDING DATA:", finding_data)
 
     if finding_data.get("has_finding"):
         finding = Finding(

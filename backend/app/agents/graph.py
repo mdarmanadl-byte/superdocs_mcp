@@ -180,7 +180,7 @@ def build_graph(session: AsyncSession, checkpointer):
     builder.add_edge("generate", "finding")
     builder.add_edge("finding", "human_review")
     builder.add_edge("human_review", END)
-    print("BEFORE CHECKPOINTER")
+    # print("BEFORE CHECKPOINTER")
 #     async with AsyncPostgresSaver.from_conn_string(
 #     os.environ["CHECKPOINT_DATABASE_URL"]
 # ) as checkpointer:

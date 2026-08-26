@@ -11,5 +11,5 @@ answer = generate_answer(
     query="What technologies did Arman use at Skolist?",
     context=context,
 )
-
+ 
 print(answer)
